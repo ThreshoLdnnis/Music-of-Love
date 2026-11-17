@@ -1,0 +1,16 @@
+<nav class="nav" aria-label="音乐角导航">
+  <button class="brand" aria-label="返回我的唱片"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="9.5" stroke-width="1.2"/><circle cx="12" cy="12" r="2.6" stroke-width="1.2"/><path d="M5.5 9.5a7 7 0 0 1 4-4m5 13a7 7 0 0 0 4-4" stroke-width=".8"/></svg></button>
+  <div class="nav-loading"><span>整理唱片中</span><i class="spinner" aria-hidden="true"></i></div>
+  <div class="nav-links" hidden>
+    <button class="nav-link current reels"><span class="roll"><span class="roll-pair"><span>唱片</span><span aria-hidden="true">唱片</span></span></span></button>
+    <button class="nav-link add-track"><span class="roll"><span class="roll-pair"><span>收藏一首 ＋</span><span aria-hidden="true">收藏一首 ＋</span></span></span></button>
+    <button class="nav-link index-toggle" aria-expanded="false" aria-controls="film-index"><span class="roll"><span class="roll-pair"><span>歌单<sup class="track-count">0</sup></span><span aria-hidden="true">歌单<sup class="track-count">0</sup></span></span></span><svg class="chevron" viewBox="0 0 8 8" fill="none" stroke="currentColor" aria-hidden="true"><path d="m1 3 3 3 3-3"/></svg></button>
+  </div>
+  <div id="film-index" class="index-panel" inert aria-label="我的歌单"></div>
+</nav>
+<canvas id="gl" tabindex="0" aria-label="我的音乐光盘。方向键切歌，Enter 查看歌词；横向拖动旋转光盘。"></canvas>
+<svg id="scrib" aria-hidden="true"><path pathLength="1"/></svg>
+<div class="hero"><h1 class="sr-only">我的音乐角，收藏喜欢的声音</h1><div class="sr-only" id="announcement" role="status" aria-live="polite"></div><div class="info"></div><div class="testimonials"></div><span class="corner-wordmark lab">MUSIC IS A PLACE TO RETURN TO.</span></div>
+<div class="pre" aria-label="正在打开音乐角"><div class="pre-left pre-side mask"><span class="ln">Music Corner</span></div><div class="pre-right pre-side">For the record.</div><div class="pre-count disp"><span class="mask"><span class="pre-glyph">№</span></span></div><i class="bottom-spinner spinner" aria-hidden="true"></i></div>
+<main id="main"></main><div id="veil"></div><div id="asset-status" role="status" hidden></div>
+<noscript><div style="position:fixed;inset:0;z-index:100;background:#f2f2f2;display:grid;place-items:center">请启用 JavaScript，打开你的音乐角。</div></noscript>
